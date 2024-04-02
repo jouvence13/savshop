@@ -36,13 +36,11 @@ class TransactionController extends Controller
         $public_key = config('kkiapay.public_key');
         $private_key = config('kkiapay.private_key');
         $secret = config('kkiapay.secret');
-        $sandbox = config('kkiapay.sandbox');
 
         $kkiapay = new \Kkiapay\Kkiapay(
             $public_key,
             $private_key,
             $secret,
-            $sandbox
         );
         $transactionData = $request->all();
         Log::info($request->all());
@@ -120,13 +118,11 @@ class TransactionController extends Controller
         $public_key = config('kkiapay.public_key');
         $private_key = config('kkiapay.private_key');
         $secret = config('kkiapay.secret');
-        $sandbox = config('kkiapay.sandbox');
 
         $kkiapay = new \Kkiapay\Kkiapay(
             $public_key,
             $private_key,
             $secret,
-            $sandbox
         );
         $transactionData = $request->all();
         Log::info($request->all());

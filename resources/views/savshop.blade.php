@@ -4446,8 +4446,8 @@
 
                                                                 @if ($article && $articlesByCategorie)
                                                                     <kkiapay-widget amount="{{ $article->prix }}"
-                                                                        key="780b68d0e78e11eeb814b93528f60ad4"
-                                                                        position="center" sandbox="true"
+                                                                        key="cb876650e192fdf79d12342d023a6f4ebe257de4"
+                                                                        position="center" sandbox=""
                                                                         data='<?php echo $stateJson; ?>'
                                                                         callback="http://127.0.0.1:8000/paysuccess/{{ $article->id }}">
                                                                     </kkiapay-widget>
@@ -4703,8 +4703,8 @@ aria-labelledby="formModalLabel" aria-hidden="true">
                                     callback: callbackURL,
                                     position: "center",
                                     theme: "#cc6666",
-                                    sandbox: true,
-                                    key: "780b68d0e78e11eeb814b93528f60ad4"
+                                    
+                                    key: "cb876650e192fdf79d12342d023a6f4ebe257de4"
                                 });
                             })
                             .catch(error => {

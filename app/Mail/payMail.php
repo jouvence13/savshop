@@ -32,7 +32,6 @@ class payMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            from: new Address('savplus@exemple.com', 'SAVOIR PLUS CONSEIL'),
             subject: 'Achat de service',
         );
     }
